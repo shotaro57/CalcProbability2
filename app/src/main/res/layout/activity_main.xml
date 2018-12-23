@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:id="@+id/sumProbability"
+            android:text="debug"
+            android:textColor="#0000FF"
+            android:textSize="25sp"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="6"
+            android:layout_above="@+id/sumProbability"
+            android:layout_below="@+id/UI" >
+            <LinearLayout
+                android:id="@+id/scrollViewLinearLayout"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/UI"
+            android:background="@color/UIBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+                    <Button
+                        android:id="@+id/editing"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dip"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="編集" />
+                    <Button
+                        android:id="@+id/delete"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dip"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="削除" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2" >
+                    <TextView
+                        android:id="@+id/tmpProbability"
+                        android:textColor="@color/tmpProbabilityColor"
+                        android:textSize="30sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1.5"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/tmp_probability_style"
+                        android:text="debug"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1.5"
+                        android:layout_gravity="center">
+                        <Button
+                            android:id="@+id/buttonNumeratorAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+" />
+                        <Button
+                            android:id="@+id/buttonDenominatorAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="1.5"
+                        android:layout_gravity="center">
+                        <Button
+                            android:id="@+id/buttonNumeratorSub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-" />
+                        <Button
+                            android:id="@+id/buttonDenominatorSub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dip"
+                        android:layout_weight="2.5"
+                        android:layout_gravity="center"
+                        android:text="update" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+                    <Button
+                        android:id="@+id/today"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:text="@string/today" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

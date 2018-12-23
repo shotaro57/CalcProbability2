@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">確率計算アプリ2</string>
+    <string name="dlg_delete_all_title">データ全削除</string>
+    <string name="dlg_delete_piece_title">一部のデータを削除</string>
+    <string name="dlg_delete_all_message">"OKを押すとすべてのデータが削除されます。データを削除しますか？"</string>
+    <string name="dlg_delete_piece_message">"「5月7日 10/10」のデータを削除したい場合「5,7」と入力してください。存在しない日付の場合、何も変化しません。"</string>
+    <string name="dlg_editing_title">データ編集</string>
+    <string name="dlg_editing_message">"「5月7日 10/10」のデータを追加したい場合「5,7,10,10」と入力してください。すでに存在する日付の場合、上書きされます。"</string>
+    <string name="today">今日の\nデータ\n追加</string>
+</resources>
