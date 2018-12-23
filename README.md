@@ -1,0 +1,3 @@
+# CalcProbability2
+
+CalcProbabilityをより直観的に操作できるように改良する
